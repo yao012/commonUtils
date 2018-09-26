@@ -1,10 +1,4 @@
 /**
- * @author: yaozhenguo
- * @date: 2018/09/26
- * @destination:
- */
-/**
- * @author zijiang.wu
  * 二分法搜索的一些特殊实现.
  *
  */
