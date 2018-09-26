@@ -3,10 +3,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 
 /**
- *
- * @author zijiang.wu
  * 类似于String, 但是易于修改, 更省内存, 只支持ascii字符
- *
  */
 public class AsciiString implements Comparable<AsciiString>, CharSequence {
 
