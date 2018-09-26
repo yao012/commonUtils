@@ -6,7 +6,6 @@ import java.io.InputStream;
 import java.io.RandomAccessFile;
 
 /**
- * @author zijiang.wu
  * 用于计算各种hash值
  */
 public class HashCodeUtil {

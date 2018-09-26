@@ -8,8 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author zijiang.wu
- *
  * 用于优化字符串相关的处理.
  * apache的StringUtils中已经优化过的操作, 不包含在本接口中.
  * 本接口尽量减少内存/cpu消耗, 减少临时对象的产生,

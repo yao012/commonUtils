@@ -5,8 +5,6 @@ import java.nio.charset.StandardCharsets;
 import java.util.Date;
 
 /**
- * Created by zijiang.wu on 2017/6/21.
- *  {@link Parcel}}的升级优化版,与之兼容
  * 优化点:
  *  1. 不再使用ArrayList<Object>来暂存需要序列化的元素, 减少整数的装包操作
  *  2. 使用{@link StringUtil#getUtf8Bytes(String, byte[], int) }来优化字符串的序列化过程.

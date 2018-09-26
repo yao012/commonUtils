@@ -6,7 +6,6 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Date;
 
 /**
- * @author zijiang.wu
  * HtppDigest的握手过程处理
  */
 public class HttpDigest {
