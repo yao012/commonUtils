@@ -1,3 +1,5 @@
+package common;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -50,7 +52,7 @@ public class HashCodeUtil {
             for(long skip=0; skip<=(length-4); skip +=FILE_SAMPLE_STEP ) {
                 file.seek(skip);
                 file.readFully(bytes);
-                //logger.info("{}", HexUtils.hexString(bytes));
+                //logger.info("{}", common.HexUtils.hexString(bytes));
                 hash = hashCode(hash, bytes, 0, bytes.length);
             }
             if(hash == 0){
@@ -77,7 +79,7 @@ public class HashCodeUtil {
             for(long skip=0; skip<=(length-4); skip +=FILE_SAMPLE_STEP ) {
                 in.skip(4);
                 in.read(bytes);
-                //logger.info("{}", HexUtils.hexString(bytes));
+                //logger.info("{}", common.HexUtils.hexString(bytes));
                 hash = hashCode(hash, bytes, 0, bytes.length);
             }
             if(hash == 0){

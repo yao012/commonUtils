@@ -1,3 +1,5 @@
+package common;
+
 import com.alibaba.fastjson.JSONObject;
 import org.apache.commons.lang3.StringUtils;
 import org.w3c.dom.Document;
