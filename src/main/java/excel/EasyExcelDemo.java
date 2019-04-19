@@ -1,4 +1,4 @@
-package Excel;
+package excel;
 
 import com.alibaba.excel.ExcelReader;
 import com.alibaba.excel.ExcelWriter;
