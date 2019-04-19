@@ -9,6 +9,9 @@ import org.apache.logging.log4j.Logger;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author Administrator
+ */
 public class TimeFormatter {
 	private final static Logger L = LogManager.getLogger(TimeFormatter.class);
 

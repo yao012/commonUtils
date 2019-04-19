@@ -1,4 +1,4 @@
-package common;
+package common.serializa;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
@@ -6,8 +6,9 @@ import java.util.Date;
 
 /**
  * 用于自动生成ParcelV2的序列化代码.
- * 文件底部有一个例子. 在intellij IDE中, 点击右键, 选择run common.ParcelUtil.main
+ * 文件底部有一个例子. 在intellij IDE中, 点击右键, 选择run common.serializa.ParcelUtil.main
  *
+ * @author Administrator
  */
 public class ParcelUtil {
 
@@ -143,7 +144,7 @@ public class ParcelUtil {
         }
 
         ser.append("\t\tif(calcLength != " + methodPrefix + "getWritedSize()){\r\n" +
-        "\t\t\tSystem.err.println(\"common.ParcelV2 fata error, writed size not equal calc size\"); \r\n" +
+        "\t\t\tSystem.err.println(\"common.serializa.ParcelV2 fata error, writed size not equal calc size\"); \r\n" +
         "\t\t}\r\n");
 
         ser.append("\t\treturn " + methodPrefix +"getBuffer();\r\n\t}");
@@ -253,7 +254,7 @@ public class ParcelUtil {
             this.writeDate(this.date2);
             this.writeInt(this.enum1==null?0:this.enum1.code);
             if(calcLength != this.getWritedSize()){
-                System.err.println("common.ParcelV2 fata error, writed size not equal calc size");
+                System.err.println("common.serializa.ParcelV2 fata error, writed size not equal calc size");
             }
             return this.getBuffer();
         }

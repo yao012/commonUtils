@@ -2,7 +2,7 @@ package common;
 
 /**
  * 二分法搜索的一些特殊实现.
- *
+ * @author zhenguo.yao
  */
 public class BinarySearchUtil {
 

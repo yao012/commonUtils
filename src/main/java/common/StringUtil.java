@@ -15,6 +15,7 @@ import java.util.List;
  * 本接口尽量减少内存/cpu消耗, 减少临时对象的产生,
  * 避免使用正则表达式.
  *
+ * @author Administrator
  */
 public class StringUtil {
     private final static Logger logger = LogManager.getLogger(StringUtil.class);

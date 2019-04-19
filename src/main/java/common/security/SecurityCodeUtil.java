@@ -1,4 +1,4 @@
-package common;
+package common.security;
 
 import java.awt.*;
 import java.awt.geom.AffineTransform;

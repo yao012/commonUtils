@@ -5,6 +5,9 @@ import org.apache.logging.log4j.Logger;
 
 import java.nio.ByteBuffer;
 
+/**
+ * @author Administrator
+ */
 public class HexUtils {
     private final static Logger logger = LogManager.getLogger(HexUtils.class);
 

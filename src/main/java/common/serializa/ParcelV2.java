@@ -1,5 +1,7 @@
-package common;
+package common.serializa;
 
+import common.AsciiString;
+import common.StringUtil;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -14,6 +16,7 @@ import java.util.Date;
  *
  * 本工具序列化与反序列化时, 字段的顺序要一致, 否则出错.
  *
+ * @author Administrator
  */
 public abstract class ParcelV2 {
     private final static Logger logger = LogManager.getLogger(ParcelV2.class);

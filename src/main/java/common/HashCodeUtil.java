@@ -29,10 +29,12 @@ public class HashCodeUtil {
         return hash;
     }
 
-
-
     private final static int FILE_SAMPLE_STEP = 1024;
-    private final static int FILE_SAMPLE_EXPONENT = 10; //1024是2的10次方
+
+    /**
+     * 1024是2的10次方
+     */
+    private final static int FILE_SAMPLE_EXPONENT = 10;
 
     /**
      * 一个很简陋的计算文件的hash值的方法.
@@ -52,7 +54,6 @@ public class HashCodeUtil {
             for(long skip=0; skip<=(length-4); skip +=FILE_SAMPLE_STEP ) {
                 file.seek(skip);
                 file.readFully(bytes);
-                //logger.info("{}", common.HexUtils.hexString(bytes));
                 hash = hashCode(hash, bytes, 0, bytes.length);
             }
             if(hash == 0){
@@ -79,7 +80,6 @@ public class HashCodeUtil {
             for(long skip=0; skip<=(length-4); skip +=FILE_SAMPLE_STEP ) {
                 in.skip(4);
                 in.read(bytes);
-                //logger.info("{}", common.HexUtils.hexString(bytes));
                 hash = hashCode(hash, bytes, 0, bytes.length);
             }
             if(hash == 0){

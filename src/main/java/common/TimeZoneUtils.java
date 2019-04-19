@@ -6,6 +6,9 @@ import org.apache.logging.log4j.Logger;
 import java.util.Date;
 import java.util.TimeZone;
 
+/**
+ * @author Administrator
+ */
 public class TimeZoneUtils {
 
     private final static Logger logger = LogManager.getLogger(TimeZoneUtils.class);

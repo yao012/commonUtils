@@ -1,4 +1,4 @@
-package common;/*
+package common.paging;/*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */

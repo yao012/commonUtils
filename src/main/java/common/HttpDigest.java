@@ -9,6 +9,7 @@ import java.util.Date;
 
 /**
  * HtppDigest的握手过程处理
+ * @author Administrator
  */
 public class HttpDigest {
 	
