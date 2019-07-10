@@ -1,4 +1,4 @@
-package common;
+package com.eques.eqhome.commons.util;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
@@ -54,7 +54,7 @@ public class DateUtils {
      * 格式:yyyy-MM-dd 2019-04-16
      */
     public static String formatSpecifiedDate(Date date) {
-        return date
+        return formatDate(date)
                 .toInstant()
                 .atZone(ZoneId.of(OFFSET_ID))
                 .toLocalDate()
@@ -83,7 +83,7 @@ public class DateUtils {
      * 格式:yyyy-MM-dd HH:mm:ss
      */
     public static String formatSpecifiedTime(Date date) {
-        return date
+        return formatDate(date)
                 .toInstant()
                 .atZone(ZoneId.of(OFFSET_ID))
                 .toLocalDateTime()
@@ -95,6 +95,12 @@ public class DateUtils {
         return Date.from(localDateTime.toInstant(ZoneOffset.of(OFFSET_ID)));
     }
 
+    private static Date formatDate(Date date){
+        if(date instanceof java.sql.Date){
+            return new Date(date.getTime());
+        }
+        return date;
+    }
 
     public static void main(String[] args) {
         System.out.println("formatCurrentDate()  = "+formatCurrentDate());
